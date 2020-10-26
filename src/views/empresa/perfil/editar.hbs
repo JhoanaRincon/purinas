@@ -1,0 +1,49 @@
+{{>admin_navigation}}
+<div class="container p-4">
+    <div class="row">
+        <div class="col.md-4 mx-auto">
+            <div class="card">
+                <div class="card-body">
+                    <form action="/empresa/perfil/editar/{{empren.id}}" method="POST">
+                        
+                        <div class="form-group">
+                            <input type="text" value="{{empren.nombre}}" class="form-control" name="nombre"
+                                placeholder="Nombre">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" value="{{empren.quienessomos}}" class="form-control" name="quienessomos"
+                                placeholder="Descripcion">
+                        </div>
+                        <div class="form-group">
+                            <input type="email" value="{{empren.emailcontacto}}" class="form-control"
+                                name="emailcontacto" placeholder="hola@oui.com">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" value="{{empren.direccion}}" class="form-control" name="direccion"
+                                placeholder="Direccion">
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" value="{{empren.telefonocontacto}}" class="form-control"
+                                name="telefonocontacto" placeholder="telefono">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" value="{{empren.facebool}}" class="form-control" name="facebook"
+                                placeholder="facebook">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" value="{{empren.twitter}}" class="form-control" name="twitter"
+                                placeholder="twitter">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" value="{{empren.instagram}}" class="form-control" name="instagram"
+                                placeholder="instagram">
+                        </div>
+                        <div class="form-group">
+                            <button class="btn btn-success btn-block">SAVE</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
