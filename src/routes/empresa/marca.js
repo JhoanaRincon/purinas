@@ -51,7 +51,6 @@ router.post('/editar/:id',esEmpresa, async (req, res) => {
         descripcion
     };
     
-    console.log('nuevaMarca');
     await pool.query('UPDATE marca set ? WHERE id = ?',[nuevaMarca, id] );
     req.flash('success', '¡Modificacion completa!');
     res.redirect('/empresa/marca');
