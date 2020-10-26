@@ -46,7 +46,7 @@ router.post('/editar/:id',esEmpresa, async (req, res) => {
     const { id } = req.params;
     const { ide, nombre, descripcion } = req.body;
     const nuevaMarca = {
-        ide,
+        id,
         nombre,
         descripcion
     };
