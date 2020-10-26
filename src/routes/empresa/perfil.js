@@ -34,7 +34,7 @@ router.post('/editar',esEmpresa, async (req, res) => {
 
     await pool.query('UPDATE empresa set ? WHERE id =?', [nuevaEmpres, id]);
     req.flash('success', '¡Modificacion completa!');
-    res.redirect('/empresa/perfil');
+    res.redirect('/empresa');
 });
 
 module.exports = router;
