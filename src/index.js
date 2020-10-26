@@ -24,7 +24,9 @@ app.engine('.hbs', exphbs({
     defaultLayout: 'main',
     layoutsDir: path.join(app.get('views'), 'layouts'),
     partialsDir: path.join(app.get('views'), 'partials'),
-    extname: '.hbs'
+    extname: '.hbs',
+    helpers: require('./lib/handlebars')
+    
 }))
 app.set('view engine', '.hbs');
 
