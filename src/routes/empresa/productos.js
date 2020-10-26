@@ -48,10 +48,9 @@ router.get('/editar/:id',esEmpresa, async (req,res) => {
 
 router.post('/editar/:id',esEmpresa,  async (req, res) => {
     const { id } = req.params;
-    const { ide, referencia, nombre, descripcioncorta, detalle, valor, palabrasclave, estado, categoria_id, marca_id } = req.body;
+    const {referencia, nombre, descripcioncorta, detalle, valor, palabrasclave, estado, categoria_id, marca_id } = req.body;
     
     const nuevoProducto = {
-        id,
         referencia,
         nombre,
         descripcioncorta,
