@@ -65,7 +65,7 @@ router.post('/editar/:id',esEmpresa,  async (req, res) => {
     
     await pool.query('UPDATE producto set ? WHERE id =?',[nuevoProducto, id] );
     req.flash('success', '¡Modificacion completa!');
-    res.redirect('/productos');
+    res.redirect('/empresa/productos');
 });
 
 
